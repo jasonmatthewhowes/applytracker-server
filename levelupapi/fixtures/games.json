@@ -1,0 +1,32 @@
+[
+    {
+        "model": "levelupapi.game",
+        "pk": 1,
+        "fields": {
+            "name": "Stab the Donkey",
+            "gamer": 1,
+            "game_type": 1,
+            "description": "A wonderful game of intrigue and mystery. He who stabs must not donkey"
+        }
+    },
+    {
+        "model": "levelupapi.game",
+        "pk": 2,
+        "fields": {
+            "name": "World of DorkRafts",
+            "gamer": 1,
+            "game_type": 3,
+            "description": "You feel isolated and lonely, get on the raft"
+        }
+    },
+    {
+        "model": "levelupapi.game",
+        "pk": 3,
+        "fields": {
+            "name": "Terds and Nerds",
+            "gamer": 1,
+            "game_type": 2,
+            "description": "Grab your friends and piss away your life"
+        }
+    }
+]
