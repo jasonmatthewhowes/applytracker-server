@@ -131,5 +131,131 @@
     ],
     "params": [],
     "tests": []
+  },
+  {
+    "_id": "ff7004c6-93ef-4ac5-b8f4-24c4e22d8f3d",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8000/events?game=1",
+    "url": "http://localhost:8000/events?game=1",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-02-14T15:50:13.627Z",
+    "modified": "2023-02-14T15:50:13.627Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Token fa2eba9be8282d595c997ee5cd49f2ed31f65bed"
+      }
+    ],
+    "params": [
+      {
+        "name": "game",
+        "value": "1",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "390bab8c-7f28-4a58-bc29-f5eb3d9e66eb",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8000/events?",
+    "url": "http://localhost:8000/events?",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-02-14T15:53:24.391Z",
+    "modified": "2023-02-14T15:53:24.391Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Token fa2eba9be8282d595c997ee5cd49f2ed31f65bed"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "2aa3d272-c334-474c-becc-f2d14b83a89b",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8000/events?game=2",
+    "url": "http://localhost:8000/events?game=2",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-02-14T15:53:53.390Z",
+    "modified": "2023-02-14T15:53:53.390Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Token fa2eba9be8282d595c997ee5cd49f2ed31f65bed"
+      }
+    ],
+    "params": [
+      {
+        "name": "game",
+        "value": "2",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "68427a63-39e6-4c85-89a2-2d7620130494",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8000/events/3",
+    "url": "http://localhost:8000/events/3",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-02-14T16:29:18.204Z",
+    "modified": "2023-02-14T16:29:18.204Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Token fa2eba9be8282d595c997ee5cd49f2ed31f65bed"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "7c23e321-9ae9-4cdc-b91d-527ca0dbf46b",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8000/events/",
+    "url": "http://localhost:8000/events/",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-02-14T17:52:05.956Z",
+    "modified": "2023-02-14T17:52:05.956Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Token fa2eba9be8282d595c997ee5cd49f2ed31f65bed"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "45eeedb2-758b-4a61-9d9d-fbe399c10a47",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8000/Games",
+    "url": "http://localhost:8000/Games",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-02-14T17:52:22.409Z",
+    "modified": "2023-02-14T17:52:22.409Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Token fa2eba9be8282d595c997ee5cd49f2ed31f65bed"
+      }
+    ],
+    "params": [],
+    "tests": []
   }
 ]

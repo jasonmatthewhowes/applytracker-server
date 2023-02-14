@@ -6,7 +6,9 @@
             "name": "Stab the Donkey",
             "gamer": 1,
             "game_type": 1,
-            "description": "A wonderful game of intrigue and mystery. He who stabs must not donkey"
+            "maker": "DonkeyPunch",
+            "skill_level": "Hard",
+            "number_of_players": 4
         }
     },
     {
@@ -16,7 +18,10 @@
             "name": "World of DorkRafts",
             "gamer": 1,
             "game_type": 3,
-            "description": "You feel isolated and lonely, get on the raft"
+            "description": "You feel isolated and lonely, get on the raft",
+            "maker": "NerdATron",
+            "skill_level": "Medium",
+            "number_of_players": 10
         }
     },
     {
@@ -26,7 +31,10 @@
             "name": "Terds and Nerds",
             "gamer": 1,
             "game_type": 2,
-            "description": "Grab your friends and piss away your life"
+            "description": "Grab your friends and piss away your life",
+            "maker": "DemonGlasses",
+            "skill_level": "Easy",
+            "number_of_players": 8
         }
     }
 ]
