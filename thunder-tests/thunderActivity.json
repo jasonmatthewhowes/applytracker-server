@@ -46,7 +46,7 @@
     "method": "GET",
     "sortNum": 0,
     "created": "2023-02-13T21:18:41.811Z",
-    "modified": "2023-02-13T21:18:41.811Z",
+    "modified": "2023-02-15T15:41:30.409Z",
     "headers": [
       {
         "name": "Authorization",
@@ -54,6 +54,11 @@
       }
     ],
     "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"name\": \"Codenames\",\n    \"maker\": \"CGE\",\n    \"number_of_players\": 6,\n    \"skill_level\": Easy,\n    \"game_type\": 2\n}",
+      "form": []
+    },
     "tests": []
   },
   {
@@ -84,7 +89,7 @@
     "method": "GET",
     "sortNum": 0,
     "created": "2023-02-13T21:25:44.278Z",
-    "modified": "2023-02-13T21:25:44.278Z",
+    "modified": "2023-02-15T15:41:06.119Z",
     "headers": [
       {
         "name": "Authorization",
@@ -92,6 +97,11 @@
       }
     ],
     "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"name\": \"Codenames\",\n    \"maker\": \"CGE\",\n    \"number_of_players\": 6,\n    \"skill_level\": Easy,\n    \"game_type\": 2\n}",
+      "form": []
+    },
     "tests": []
   },
   {
@@ -185,7 +195,7 @@
     "method": "GET",
     "sortNum": 0,
     "created": "2023-02-14T15:53:53.390Z",
-    "modified": "2023-02-14T15:53:53.390Z",
+    "modified": "2023-02-15T15:41:45.142Z",
     "headers": [
       {
         "name": "Authorization",
@@ -199,6 +209,11 @@
         "isPath": false
       }
     ],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"name\": \"Codenames\",\n    \"maker\": \"CGE\",\n    \"number_of_players\": 6,\n    \"skill_level\": Easy,\n    \"game_type\": 2\n}",
+      "form": []
+    },
     "tests": []
   },
   {
@@ -256,6 +271,78 @@
       }
     ],
     "params": [],
+    "tests": []
+  },
+  {
+    "_id": "b4c370bc-9598-40cb-a93d-03b81135999b",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8000/games",
+    "url": "http://localhost:8000/games",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2023-02-15T15:35:37.150Z",
+    "modified": "2023-02-15T15:50:16.198Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Token fa2eba9be8282d595c997ee5cd49f2ed31f65bed"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"name\": \"Codenames\",\n    \"maker\": \"CGE\",\n    \"number_of_players\": 6,\n    \"skill_level\": \"Easy\",\n    \"game_type\": 2,\n    \"description\": \"Super Coding Game\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "2749ecfd-669f-44a4-bf91-af7ff4867c7f",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8000/events",
+    "url": "http://localhost:8000/events",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2023-02-15T16:13:29.017Z",
+    "modified": "2023-02-15T16:55:16.435Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Token fa2eba9be8282d595c997ee5cd49f2ed31f65bed"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"gamer\": 1,\n    \"game\": 2,\n    \"name\": \"James-alooza\",\n    \"description\": \"Make cocktails\",\n    \"date\": \"2023-02-24 13:24:27.172000\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "81e93f90-78de-4908-a26f-f40aae5ef32e",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8000/events/",
+    "url": "http://localhost:8000/events/",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2023-02-15T16:40:12.032Z",
+    "modified": "2023-02-15T16:40:12.032Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Token fa2eba9be8282d595c997ee5cd49f2ed31f65bed"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"gamer\": 1,\n    \"game\": 3,\n    \"name\": \"Nashville Game Fest\",\n    \"description\": \"Grab your boots cause we gaming HARD\",\n    \"date\": \"2023-02-20 13:24:27.172000\",\n}",
+      "form": []
+    },
     "tests": []
   }
 ]
