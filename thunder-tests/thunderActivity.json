@@ -8,7 +8,7 @@
     "method": "GET",
     "sortNum": 0,
     "created": "2023-02-13T20:37:41.798Z",
-    "modified": "2023-02-13T20:37:41.798Z",
+    "modified": "2023-02-16T15:21:50.186Z",
     "headers": [
       {
         "name": "Authorization",
@@ -16,6 +16,11 @@
       }
     ],
     "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"gamer\": 1,\n    \"game_type\": 2,\n    \"name\": \"HogTie\",\n    \"description\": \"Eat a sandwhich\",\n    \"maker\": \"Hasbro\",\n    \"date\": \"2023-02-22 13:24:27.172000\",\n    \"number_of_players\": 4,\n    \"skill_level\": \"Easy\"\n}",
+      "form": []
+    },
     "tests": []
   },
   {
@@ -46,7 +51,7 @@
     "method": "GET",
     "sortNum": 0,
     "created": "2023-02-13T21:18:41.811Z",
-    "modified": "2023-02-15T15:41:30.409Z",
+    "modified": "2023-02-16T17:01:40.098Z",
     "headers": [
       {
         "name": "Authorization",
@@ -56,7 +61,7 @@
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n    \"name\": \"Codenames\",\n    \"maker\": \"CGE\",\n    \"number_of_players\": 6,\n    \"skill_level\": Easy,\n    \"game_type\": 2\n}",
+      "raw": "{\n    \"id\": 3,\n    \"name\": \"Terds and Nerds\",\n    \"gamer\": 1,\n    \"game_type\": 2,\n    \"description\": \"Grab your friends and pass the time away\",\n    \"maker\": \"DemonDudes\",\n    \"skill_level\": \"Medium\",\n    \"number_of_players\": 6\n  }",
       "form": []
     },
     "tests": []
@@ -89,7 +94,7 @@
     "method": "GET",
     "sortNum": 0,
     "created": "2023-02-13T21:25:44.278Z",
-    "modified": "2023-02-15T15:41:06.119Z",
+    "modified": "2023-02-16T16:32:49.074Z",
     "headers": [
       {
         "name": "Authorization",
@@ -99,7 +104,7 @@
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n    \"name\": \"Codenames\",\n    \"maker\": \"CGE\",\n    \"number_of_players\": 6,\n    \"skill_level\": Easy,\n    \"game_type\": 2\n}",
+      "raw": "{\n    \"gamer\": 1,\n    \"game_type\": 2,\n    \"name\": \"HogTie\",\n    \"description\": \"Eat a sandwhich\",\n    \"maker\": \"Hasbro\",\n    \"date\": \"2023-02-22 13:24:27.172000\",\n    \"number_of_players\": 4,\n    \"skill_level\": \"Easy\"\n}",
       "form": []
     },
     "tests": []
@@ -282,7 +287,7 @@
     "method": "POST",
     "sortNum": 0,
     "created": "2023-02-15T15:35:37.150Z",
-    "modified": "2023-02-15T15:50:16.198Z",
+    "modified": "2023-02-16T15:12:24.375Z",
     "headers": [
       {
         "name": "Authorization",
@@ -292,7 +297,7 @@
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n    \"name\": \"Codenames\",\n    \"maker\": \"CGE\",\n    \"number_of_players\": 6,\n    \"skill_level\": \"Easy\",\n    \"game_type\": 2,\n    \"description\": \"Super Coding Game\"\n}",
+      "raw": "{\n    \"gamer\": 1,\n    \"game_type\": 2,\n    \"name\": \"HogTie\",\n    \"description\": \"Eat a sandwhich\",\n    \"maker\": \"Hasbro\",\n    \"date\": \"2023-02-22 13:24:27.172000\",\n    \"number_of_players\": 4,\n    \"skill_level\": \"Easy\"\n}",
       "form": []
     },
     "tests": []
@@ -341,6 +346,150 @@
     "body": {
       "type": "json",
       "raw": "{\n    \"gamer\": 1,\n    \"game\": 3,\n    \"name\": \"Nashville Game Fest\",\n    \"description\": \"Grab your boots cause we gaming HARD\",\n    \"date\": \"2023-02-20 13:24:27.172000\",\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "e081ebfb-7b9f-425b-bea4-65c5cea3d902",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8000/game_types",
+    "url": "http://localhost:8000/game_types",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-02-15T19:15:32.855Z",
+    "modified": "2023-02-15T19:15:32.855Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Token fa2eba9be8282d595c997ee5cd49f2ed31f65bed"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"gamer\": 1,\n    \"game\": 2,\n    \"name\": \"James-alooza\",\n    \"description\": \"Make cocktails\",\n    \"date\": \"2023-02-24 13:24:27.172000\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "07da513e-33d1-4890-b180-4ac76bd4e9a7",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8000/games",
+    "url": "http://localhost:8000/games",
+    "method": "PUT",
+    "sortNum": 0,
+    "created": "2023-02-16T16:35:58.501Z",
+    "modified": "2023-02-16T16:35:58.501Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Token fa2eba9be8282d595c997ee5cd49f2ed31f65bed"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"id\": 3,\n    \"name\": \"Terds and Nerds\",\n    \"gamer\": 1,\n    \"game_type\": 2,\n    \"description\": \"Grab your friends and pass the time away\",\n    \"maker\": \"DemonDudes\",\n    \"skill_level\": \"Medium\",\n    \"number_of_players\": 6\n  }",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "3a970afd-2a70-4775-997e-16632655f0ca",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8000/games/3",
+    "url": "http://localhost:8000/games/3",
+    "method": "PUT",
+    "sortNum": 0,
+    "created": "2023-02-16T16:36:23.146Z",
+    "modified": "2023-02-16T16:36:23.146Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Token fa2eba9be8282d595c997ee5cd49f2ed31f65bed"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"id\": 3,\n    \"name\": \"Terds and Nerds\",\n    \"gamer\": 1,\n    \"game_type\": 2,\n    \"description\": \"Grab your friends and pass the time away\",\n    \"maker\": \"DemonDudes\",\n    \"skill_level\": \"Medium\",\n    \"number_of_players\": 6\n  }",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "ac2daef3-90f0-4d3e-9f4b-19409c15a50b",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8000/games/3",
+    "url": "http://localhost:8000/games/3",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-02-16T16:47:52.356Z",
+    "modified": "2023-02-16T16:47:52.356Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Token fa2eba9be8282d595c997ee5cd49f2ed31f65bed"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"id\": 3,\n    \"name\": \"Terds and Nerds\",\n    \"gamer\": 1,\n    \"game_type\": 2,\n    \"description\": \"Grab your friends and pass the time away\",\n    \"maker\": \"DemonDudes\",\n    \"skill_level\": \"Medium\",\n    \"number_of_players\": 6\n  }",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "246dc102-f975-4261-80a9-fb452c3f8003",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8000/events/1",
+    "url": "http://localhost:8000/events/1",
+    "method": "PUT",
+    "sortNum": 0,
+    "created": "2023-02-16T17:02:53.908Z",
+    "modified": "2023-02-16T17:02:53.908Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Token fa2eba9be8282d595c997ee5cd49f2ed31f65bed"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"id\": 1,\n    \"gamer\": 1,\n    \"game\": 3,\n    \"name\": \"SouthWestern Toilet Summit\",\n    \"description\": \"We are gonna have a wild timez with diet mountain dew and hotpockets\",\n    \"date\": \"2023-06-15T13:24:27.172000Z\"\n  }",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "e6eb6335-d249-4b8a-bd6a-b8978d95c3bc",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8000/events/1",
+    "url": "http://localhost:8000/events/1",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-02-16T17:03:02.006Z",
+    "modified": "2023-02-16T17:03:02.006Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Token fa2eba9be8282d595c997ee5cd49f2ed31f65bed"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"id\": 1,\n    \"gamer\": 1,\n    \"game\": 3,\n    \"name\": \"SouthWestern Toilet Summit\",\n    \"description\": \"We are gonna have a wild timez with diet mountain dew and hotpockets\",\n    \"date\": \"2023-06-15T13:24:27.172000Z\"\n  }",
       "form": []
     },
     "tests": []

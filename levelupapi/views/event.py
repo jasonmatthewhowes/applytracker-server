@@ -60,6 +60,21 @@ class EventView(ViewSet):
         serializer = EventSerializer(event)
         return Response(serializer.data, status=201)
 
+    def update(self, request, pk):
+        #handles put request
+        event = Event.objects.get(pk=pk)
+        event.name = request.data["name"]
+        event.description = request.data["description"]
+        event.date = request.data["date"]
+        #get the object to pass because of foreign key
+        game = Game.objects.get(pk=request.data["game"])
+        gamer = Gamer.objects.get(pk=request.data["gamer"])
+        event.game = game
+        event.gamer = gamer
+        event.save()
+
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
+
 class EventSerializer(serializers.ModelSerializer):
     """JSON serializer 
     """
