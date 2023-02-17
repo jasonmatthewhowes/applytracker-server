@@ -7,3 +7,4 @@ class Event(models.Model):
     name = models.CharField(max_length=155)
     description = models.CharField(max_length=155)
     date = models.DateTimeField(null=True, blank=True, auto_now=False, auto_now_add=False)
+    

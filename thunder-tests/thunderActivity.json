@@ -51,7 +51,7 @@
     "method": "GET",
     "sortNum": 0,
     "created": "2023-02-13T21:18:41.811Z",
-    "modified": "2023-02-16T17:01:40.098Z",
+    "modified": "2023-02-16T20:20:55.442Z",
     "headers": [
       {
         "name": "Authorization",
@@ -61,7 +61,7 @@
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n    \"id\": 3,\n    \"name\": \"Terds and Nerds\",\n    \"gamer\": 1,\n    \"game_type\": 2,\n    \"description\": \"Grab your friends and pass the time away\",\n    \"maker\": \"DemonDudes\",\n    \"skill_level\": \"Medium\",\n    \"number_of_players\": 6\n  }",
+      "raw": "{\n    \"id\": 1,\n    \"gamer\": 1,\n    \"game\": 3,\n    \"name\": \"SouthWestern Toilet Summit\",\n    \"description\": \"We are gonna have a wild timez with diet mountain dew and hotpockets\",\n    \"date\": \"2023-06-15T13:24:27.172000Z\"\n  }",
       "form": []
     },
     "tests": []
@@ -94,7 +94,7 @@
     "method": "GET",
     "sortNum": 0,
     "created": "2023-02-13T21:25:44.278Z",
-    "modified": "2023-02-16T16:32:49.074Z",
+    "modified": "2023-02-16T20:18:31.295Z",
     "headers": [
       {
         "name": "Authorization",
@@ -104,7 +104,7 @@
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n    \"gamer\": 1,\n    \"game_type\": 2,\n    \"name\": \"HogTie\",\n    \"description\": \"Eat a sandwhich\",\n    \"maker\": \"Hasbro\",\n    \"date\": \"2023-02-22 13:24:27.172000\",\n    \"number_of_players\": 4,\n    \"skill_level\": \"Easy\"\n}",
+      "raw": "{\n    \"id\": 1,\n    \"gamer\": 1,\n    \"game\": 3,\n    \"name\": \"SouthWestern Toilet Summit\",\n    \"description\": \"We are gonna have a wild timez with diet mountain dew and hotpockets\",\n    \"date\": \"2023-06-15T13:24:27.172000Z\"\n  }",
       "form": []
     },
     "tests": []
@@ -249,7 +249,7 @@
     "method": "GET",
     "sortNum": 0,
     "created": "2023-02-14T17:52:05.956Z",
-    "modified": "2023-02-14T17:52:05.956Z",
+    "modified": "2023-02-16T20:23:43.757Z",
     "headers": [
       {
         "name": "Authorization",
@@ -257,6 +257,11 @@
       }
     ],
     "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"id\": 1,\n    \"gamer\": 1,\n    \"game\": 3,\n    \"name\": \"SouthWestern Toilet Summit\",\n    \"description\": \"We are gonna have a wild timez with diet mountain dew and hotpockets\",\n    \"date\": \"2023-06-15T13:24:27.172000Z\"\n  }",
+      "form": []
+    },
     "tests": []
   },
   {
@@ -490,6 +495,342 @@
     "body": {
       "type": "json",
       "raw": "{\n    \"id\": 1,\n    \"gamer\": 1,\n    \"game\": 3,\n    \"name\": \"SouthWestern Toilet Summit\",\n    \"description\": \"We are gonna have a wild timez with diet mountain dew and hotpockets\",\n    \"date\": \"2023-06-15T13:24:27.172000Z\"\n  }",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "5513923e-2e5f-43ca-abab-51fb72e0fd0c",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8000/games/",
+    "url": "http://localhost:8000/games/",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-02-16T20:18:23.118Z",
+    "modified": "2023-02-16T20:18:23.118Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Token fa2eba9be8282d595c997ee5cd49f2ed31f65bed"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"id\": 1,\n    \"gamer\": 1,\n    \"game\": 3,\n    \"name\": \"SouthWestern Toilet Summit\",\n    \"description\": \"We are gonna have a wild timez with diet mountain dew and hotpockets\",\n    \"date\": \"2023-06-15T13:24:27.172000Z\"\n  }",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "397903c4-db53-4477-a4cf-d1df9ab92654",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8000/games/7",
+    "url": "http://localhost:8000/games/7",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-02-16T20:18:41.764Z",
+    "modified": "2023-02-16T20:18:41.764Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Token fa2eba9be8282d595c997ee5cd49f2ed31f65bed"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"id\": 1,\n    \"gamer\": 1,\n    \"game\": 3,\n    \"name\": \"SouthWestern Toilet Summit\",\n    \"description\": \"We are gonna have a wild timez with diet mountain dew and hotpockets\",\n    \"date\": \"2023-06-15T13:24:27.172000Z\"\n  }",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "13bdf7e3-41c9-4f44-bf0d-362cf5a4e586",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8000/games/7",
+    "url": "http://localhost:8000/games/7",
+    "method": "DELETE",
+    "sortNum": 0,
+    "created": "2023-02-16T20:18:46.965Z",
+    "modified": "2023-02-16T20:18:46.965Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Token fa2eba9be8282d595c997ee5cd49f2ed31f65bed"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"id\": 1,\n    \"gamer\": 1,\n    \"game\": 3,\n    \"name\": \"SouthWestern Toilet Summit\",\n    \"description\": \"We are gonna have a wild timez with diet mountain dew and hotpockets\",\n    \"date\": \"2023-06-15T13:24:27.172000Z\"\n  }",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "a04eba2e-ae87-48ab-9be6-608162c9cc26",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8000/games/8",
+    "url": "http://localhost:8000/games/8",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-02-16T20:19:11.122Z",
+    "modified": "2023-02-16T20:19:11.122Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Token fa2eba9be8282d595c997ee5cd49f2ed31f65bed"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"id\": 1,\n    \"gamer\": 1,\n    \"game\": 3,\n    \"name\": \"SouthWestern Toilet Summit\",\n    \"description\": \"We are gonna have a wild timez with diet mountain dew and hotpockets\",\n    \"date\": \"2023-06-15T13:24:27.172000Z\"\n  }",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "0d509919-78c9-4cc2-8953-f83a7910af01",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8000/events/10",
+    "url": "http://localhost:8000/events/10",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-02-16T20:21:54.995Z",
+    "modified": "2023-02-16T20:21:54.995Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Token fa2eba9be8282d595c997ee5cd49f2ed31f65bed"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"id\": 1,\n    \"gamer\": 1,\n    \"game\": 3,\n    \"name\": \"SouthWestern Toilet Summit\",\n    \"description\": \"We are gonna have a wild timez with diet mountain dew and hotpockets\",\n    \"date\": \"2023-06-15T13:24:27.172000Z\"\n  }",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "df70e566-8dcf-4bb6-a921-aa28efb1cfb6",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8000/events/11",
+    "url": "http://localhost:8000/events/11",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-02-16T20:22:01.260Z",
+    "modified": "2023-02-16T20:22:01.260Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Token fa2eba9be8282d595c997ee5cd49f2ed31f65bed"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"id\": 1,\n    \"gamer\": 1,\n    \"game\": 3,\n    \"name\": \"SouthWestern Toilet Summit\",\n    \"description\": \"We are gonna have a wild timez with diet mountain dew and hotpockets\",\n    \"date\": \"2023-06-15T13:24:27.172000Z\"\n  }",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "646c87b8-9d87-4891-99a5-d10c14e7d77a",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8000/events/11",
+    "url": "http://localhost:8000/events/11",
+    "method": "DELETE",
+    "sortNum": 0,
+    "created": "2023-02-16T20:22:12.234Z",
+    "modified": "2023-02-16T20:22:12.234Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Token fa2eba9be8282d595c997ee5cd49f2ed31f65bed"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"id\": 1,\n    \"gamer\": 1,\n    \"game\": 3,\n    \"name\": \"SouthWestern Toilet Summit\",\n    \"description\": \"We are gonna have a wild timez with diet mountain dew and hotpockets\",\n    \"date\": \"2023-06-15T13:24:27.172000Z\"\n  }",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "91b75c61-e435-4674-9f69-de898ef4df45",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8000/events/12",
+    "url": "http://localhost:8000/events/12",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-02-16T20:22:23.339Z",
+    "modified": "2023-02-16T20:22:23.339Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Token fa2eba9be8282d595c997ee5cd49f2ed31f65bed"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"id\": 1,\n    \"gamer\": 1,\n    \"game\": 3,\n    \"name\": \"SouthWestern Toilet Summit\",\n    \"description\": \"We are gonna have a wild timez with diet mountain dew and hotpockets\",\n    \"date\": \"2023-06-15T13:24:27.172000Z\"\n  }",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "085e61b8-cf97-4a49-94cd-f815fd8bcc13",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8000/events/09",
+    "url": "http://localhost:8000/events/09",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-02-16T20:22:27.452Z",
+    "modified": "2023-02-16T20:22:27.452Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Token fa2eba9be8282d595c997ee5cd49f2ed31f65bed"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"id\": 1,\n    \"gamer\": 1,\n    \"game\": 3,\n    \"name\": \"SouthWestern Toilet Summit\",\n    \"description\": \"We are gonna have a wild timez with diet mountain dew and hotpockets\",\n    \"date\": \"2023-06-15T13:24:27.172000Z\"\n  }",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "ff9c8552-93b8-4195-b746-02971d99ee79",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8000/events/07",
+    "url": "http://localhost:8000/events/07",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-02-16T20:22:31.247Z",
+    "modified": "2023-02-16T20:22:31.247Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Token fa2eba9be8282d595c997ee5cd49f2ed31f65bed"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"id\": 1,\n    \"gamer\": 1,\n    \"game\": 3,\n    \"name\": \"SouthWestern Toilet Summit\",\n    \"description\": \"We are gonna have a wild timez with diet mountain dew and hotpockets\",\n    \"date\": \"2023-06-15T13:24:27.172000Z\"\n  }",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "84565a29-826c-4def-9e39-9adc51df302f",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8000/events/07",
+    "url": "http://localhost:8000/events/07",
+    "method": "DELETE",
+    "sortNum": 0,
+    "created": "2023-02-16T20:22:43.442Z",
+    "modified": "2023-02-16T20:22:43.442Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Token fa2eba9be8282d595c997ee5cd49f2ed31f65bed"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"id\": 1,\n    \"gamer\": 1,\n    \"game\": 3,\n    \"name\": \"SouthWestern Toilet Summit\",\n    \"description\": \"We are gonna have a wild timez with diet mountain dew and hotpockets\",\n    \"date\": \"2023-06-15T13:24:27.172000Z\"\n  }",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "238f301b-0310-46e3-87e7-970794ce7d19",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8000/events/10",
+    "url": "http://localhost:8000/events/10",
+    "method": "DELETE",
+    "sortNum": 0,
+    "created": "2023-02-16T20:24:17.630Z",
+    "modified": "2023-02-16T20:24:17.630Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Token fa2eba9be8282d595c997ee5cd49f2ed31f65bed"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"id\": 1,\n    \"gamer\": 1,\n    \"game\": 3,\n    \"name\": \"SouthWestern Toilet Summit\",\n    \"description\": \"We are gonna have a wild timez with diet mountain dew and hotpockets\",\n    \"date\": \"2023-06-15T13:24:27.172000Z\"\n  }",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "16fcab02-f226-4878-b75b-6cd68f24acc6",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8000/events/09",
+    "url": "http://localhost:8000/events/09",
+    "method": "DELETE",
+    "sortNum": 0,
+    "created": "2023-02-16T20:24:22.712Z",
+    "modified": "2023-02-16T20:24:22.712Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Token fa2eba9be8282d595c997ee5cd49f2ed31f65bed"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"id\": 1,\n    \"gamer\": 1,\n    \"game\": 3,\n    \"name\": \"SouthWestern Toilet Summit\",\n    \"description\": \"We are gonna have a wild timez with diet mountain dew and hotpockets\",\n    \"date\": \"2023-06-15T13:24:27.172000Z\"\n  }",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "5f84ece3-0306-4105-b217-e63322595671",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8000/events/1/signup",
+    "url": "http://localhost:8000/events/1/signup",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2023-02-17T15:54:12.571Z",
+    "modified": "2023-02-17T15:54:12.571Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Token fa2eba9be8282d595c997ee5cd49f2ed31f65bed"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"gamer\": 1,\n    \"event\": 2,\n  }",
       "form": []
     },
     "tests": []
