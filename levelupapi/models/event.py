@@ -7,4 +7,12 @@ class Event(models.Model):
     name = models.CharField(max_length=155)
     description = models.CharField(max_length=155)
     date = models.DateTimeField(null=True, blank=True, auto_now=False, auto_now_add=False)
-    
+    attendees = models.ManyToManyField("Gamer", through="Attendance") 
+
+    @property
+    def joined(self):
+        return self.__joined
+
+    @joined.setter
+    def joined(self, value):
+        self.__joined = value

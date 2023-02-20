@@ -6,7 +6,7 @@ from rest_framework import serializers, status
 from levelupapi.models import Event
 from levelupapi.models import Game
 from levelupapi.models import Gamer
-from levelupapi.models import EventAttendance
+from levelupapi.models import Attendance
 from rest_framework.decorators import action
 
 class EventView(ViewSet):
@@ -37,7 +37,11 @@ class EventView(ViewSet):
             filteredby = request.query_params['game'][0]
             events = events.filter(game=filteredby)
 
-        
+        # Set the `joined` property on every event
+        for event in events:
+        # Check to see if the gamer is in the attendees list on the event
+            event.joined = event.gamer in event.attendees.all()
+
         serializer = EventSerializer(events, many=True)
         return Response(serializer.data)
 
@@ -88,15 +92,30 @@ class EventView(ViewSet):
     
         gamer = Gamer.objects.get(user=request.auth.user)
         event = Event.objects.get(pk=pk)
-        EventAttendance.add(gamer)
+        event.attendees.add(gamer)
         return Response({'message': 'Gamer added'}, status=status.HTTP_201_CREATED)
     
-
+    
+    @action(methods=['delete'], detail=True)
+    def leave(self, request, pk):
+        """Post request for a user to sign up for an event"""
+    
+        gamer = Gamer.objects.get(user=request.auth.user)
+        event = Event.objects.get(pk=pk)
+        event.attendees.remove(gamer)
+        return Response({'message': 'Gamer deleted'}, status=status.HTTP_204_NO_CONTENT)
+    
+class EventGamerSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Gamer
+        fields = ('user', 'bio')
  
 
 class EventSerializer(serializers.ModelSerializer):
     """JSON serializer 
     """
+    gamer = EventGamerSerializer(many = False )
+
     class Meta:
         model = Event
-        fields = ('id', 'gamer', 'game', 'name', 'description', 'date')
+        fields = ('id', 'game', 'gamer', 'name', 'description', 'date', 'attendees', 'joined')

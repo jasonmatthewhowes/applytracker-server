@@ -51,7 +51,7 @@
     "method": "GET",
     "sortNum": 0,
     "created": "2023-02-13T21:18:41.811Z",
-    "modified": "2023-02-16T20:20:55.442Z",
+    "modified": "2023-02-17T19:56:07.056Z",
     "headers": [
       {
         "name": "Authorization",
@@ -59,11 +59,6 @@
       }
     ],
     "params": [],
-    "body": {
-      "type": "json",
-      "raw": "{\n    \"id\": 1,\n    \"gamer\": 1,\n    \"game\": 3,\n    \"name\": \"SouthWestern Toilet Summit\",\n    \"description\": \"We are gonna have a wild timez with diet mountain dew and hotpockets\",\n    \"date\": \"2023-06-15T13:24:27.172000Z\"\n  }",
-      "form": []
-    },
     "tests": []
   },
   {
@@ -249,7 +244,7 @@
     "method": "GET",
     "sortNum": 0,
     "created": "2023-02-14T17:52:05.956Z",
-    "modified": "2023-02-16T20:23:43.757Z",
+    "modified": "2023-02-17T19:55:59.679Z",
     "headers": [
       {
         "name": "Authorization",
@@ -257,11 +252,6 @@
       }
     ],
     "params": [],
-    "body": {
-      "type": "json",
-      "raw": "{\n    \"id\": 1,\n    \"gamer\": 1,\n    \"game\": 3,\n    \"name\": \"SouthWestern Toilet Summit\",\n    \"description\": \"We are gonna have a wild timez with diet mountain dew and hotpockets\",\n    \"date\": \"2023-06-15T13:24:27.172000Z\"\n  }",
-      "form": []
-    },
     "tests": []
   },
   {
@@ -484,7 +474,7 @@
     "method": "GET",
     "sortNum": 0,
     "created": "2023-02-16T17:03:02.006Z",
-    "modified": "2023-02-16T17:03:02.006Z",
+    "modified": "2023-02-17T18:01:37.111Z",
     "headers": [
       {
         "name": "Authorization",
@@ -494,7 +484,7 @@
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n    \"id\": 1,\n    \"gamer\": 1,\n    \"game\": 3,\n    \"name\": \"SouthWestern Toilet Summit\",\n    \"description\": \"We are gonna have a wild timez with diet mountain dew and hotpockets\",\n    \"date\": \"2023-06-15T13:24:27.172000Z\"\n  }",
+      "raw": "{\n    \"gamer\": 1,\n    \"event\": 1,\n  }",
       "form": []
     },
     "tests": []
@@ -820,7 +810,7 @@
     "method": "POST",
     "sortNum": 0,
     "created": "2023-02-17T15:54:12.571Z",
-    "modified": "2023-02-17T15:54:12.571Z",
+    "modified": "2023-02-17T18:01:04.117Z",
     "headers": [
       {
         "name": "Authorization",
@@ -830,9 +820,66 @@
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n    \"gamer\": 1,\n    \"event\": 2,\n  }",
+      "raw": "{\n    \"gamer\": 1,\n    \"event\": 1,\n  }",
       "form": []
     },
+    "tests": []
+  },
+  {
+    "_id": "beea077d-ffd2-4c50-9626-7fb36cc83c59",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8000/events/2/signup",
+    "url": "http://localhost:8000/events/2/signup",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2023-02-17T18:03:28.173Z",
+    "modified": "2023-02-17T18:03:28.173Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Token fa2eba9be8282d595c997ee5cd49f2ed31f65bed"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "e57bbb5c-86a2-4981-809a-4ac97b3998d4",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8000/events/3/signup",
+    "url": "http://localhost:8000/events/3/signup",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2023-02-17T21:50:22.690Z",
+    "modified": "2023-02-17T21:50:22.690Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Token fa2eba9be8282d595c997ee5cd49f2ed31f65bed"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "7c3eb257-a0e4-495d-be99-97f18ea9e3bf",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8000/events/3/leave",
+    "url": "http://localhost:8000/events/3/leave",
+    "method": "DELETE",
+    "sortNum": 0,
+    "created": "2023-02-17T21:51:09.273Z",
+    "modified": "2023-02-17T21:51:09.273Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Token fa2eba9be8282d595c997ee5cd49f2ed31f65bed"
+      }
+    ],
+    "params": [],
     "tests": []
   }
 ]
