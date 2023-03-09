@@ -13,7 +13,8 @@
             "companyjobs": 2,
             "job_service": 2,
             "role": 2,
-            "contact": 3
+            "contact": 3,
+            "temperature": 5
         }
     },
     {
@@ -29,7 +30,8 @@
             "due_date":"2023-11-30",
             "companyjobs": 2,
             "job_service": 3,
-            "role": 3
+            "role": 3,
+            "temperature": 7
         }
     },
     {
@@ -45,7 +47,8 @@
             "due_date":"2023-10-15",
             "companyjobs": 2,
             "job_service": 3,
-            "role": 4
+            "role": 4,
+            "temperature": null
         }
     },
     {
@@ -61,7 +64,8 @@
             "due_date":"2023-09-25",
             "companyjobs": 2,
             "job_service": 4,
-            "role": 2
+            "role": 2,
+            "temperature": 2
         }
     },
     {
@@ -78,7 +82,8 @@
             "companyjobs": 1,
             "job_service": 1,
             "role": 1,
-            "contact": 1
+            "contact": 1,
+            "temperature": 9
         }
     }
     

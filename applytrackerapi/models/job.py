@@ -15,3 +15,4 @@ class Job(models.Model):
     timestamp = models.DateTimeField(null=True, blank=True, auto_now_add=True)
     companyjobs = models.ForeignKey("Company",on_delete=models.CASCADE, related_name='company_per_job', null=True )
     contact = models.ForeignKey("Contact",on_delete=models.CASCADE, related_name='job_contact', null=True )
+    temperature = models.IntegerField(null=True)

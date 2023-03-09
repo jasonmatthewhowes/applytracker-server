@@ -7,6 +7,11 @@ from applytrackerapi.models import Job
 from applytrackerapi.models import Resume
 from applytrackerapi.models import Cover_Letter
 from applytrackerapi.models import Contact
+from applytrackerapi.models import Job_Service
+from applytrackerapi.models import Role
+from applytrackerapi.models import Company
+from applytrackerapi.models import Contact
+from django.contrib.auth.models import User
 
 from rest_framework.decorators import action
 
@@ -53,15 +58,27 @@ class JobView(ViewSet):
         Returns
         Response -- JSON serialized job instance
     """
-        gamer = Gamer.objects.get(user=request.auth.user)
-        game = Game.objects.get(pk=request.data["game"])
+        user = User.objects.get(pk=request.auth.user_id)
+        resume = Resume.objects.get(pk=request.data["resume"])
+        cover_letter = Cover_Letter.objects.get(pk=request.data["cover_letter"])
+        job_service = Job_Service.objects.get(pk=request.data["job_service"])
+        role = Role.objects.get(pk=request.data["role"])
+        companyjobs = Company.objects.get(pk=request.data["companyjobs"])
+        contact = Contact.objects.get(pk=request.data["contact"])
 
         job = Job.objects.create(
-            gamer=gamer,
-            game=game,
-            name=request.data["name"],
-            description=request.data["description"],
-            date = request.data["date"],
+            name = request.data["name"],
+            job_post_link = request.data ["job_post_link"],
+            applied = request.data ["applied"],
+            description = request.data["description"],
+            due_date = request.data["due_date"],
+            user = user,
+            resume = resume,
+            cover_letter = cover_letter,
+            job_service = job_service,
+            role = role,
+            companyjobs = companyjobs,
+            contact = contact,
         )
         serializer = JobSerializer(job)
         return Response(serializer.data, status=201)
@@ -70,13 +87,25 @@ class JobView(ViewSet):
         #handles put request
         job = Job.objects.get(pk=pk)
         job.name = request.data["name"]
+        job.job_post_link = request.data ["job_post_link"]
+        job.applied = request.data ["applied"]
         job.description = request.data["description"]
-        job.date = request.data["date"]
-        #get the object to pass because of foreign key
-        game = Game.objects.get(pk=request.data["game"])
-        gamer = Gamer.objects.get(pk=request.data["gamer"])
-        job.game = game
-        job.gamer = gamer
+        job.due_date = request.data["due_date"]
+        #get the objects to pass because of foreign key
+        user = User.objects.get(pk=request.auth.user_id)
+        resume = Resume.objects.get(pk=request.data["resume"])
+        cover_letter = Cover_Letter.objects.get(pk=request.data["cover_letter"])
+        job_service = Job_Service.objects.get(pk=request.data["job_service"])
+        role = Role.objects.get(pk=request.data["role"])
+        companyjobs = Company.objects.get(pk=request.data["companyjobs"])
+        contact = Contact.objects.get(pk=request.data["contact"])
+        job.user = user
+        job.resume = resume
+        job.cover_letter = cover_letter
+        job.job_service = job_service
+        job.role = role
+        job.companyjobs = companyjobs
+        job.contact = contact
         job.save()
 
         return Response(None, status=status.HTTP_204_NO_CONTENT)
@@ -126,4 +155,4 @@ class JobSerializer(serializers.ModelSerializer):
     contact = JobContactSerializer(many = False )
     class Meta:
         model = Job
-        fields = ('id', 'user', 'name', 'job_post_link', 'resume', 'cover_letter', 'applied', 'due_date', 'description', 'job_service','role', 'timestamp', 'companyjobs', 'contact')
+        fields = ('id', 'user', 'name', 'job_post_link', 'resume', 'cover_letter', 'applied', 'due_date', 'description', 'job_service','role', 'timestamp', 'companyjobs', 'contact', 'temperature')

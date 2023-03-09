@@ -868,11 +868,11 @@
     "colId": "history",
     "containerId": "",
     "name": "http://localhost:8000/events/3/leave",
-    "url": "http://localhost:8000/jobs/1",
+    "url": "http://localhost:8000/jobs/6",
     "method": "GET",
     "sortNum": 0,
     "created": "2023-02-17T21:51:09.273Z",
-    "modified": "2023-03-09T19:56:24.610Z",
+    "modified": "2023-03-09T21:53:29.973Z",
     "headers": [
       {
         "name": "Authorization",
@@ -880,6 +880,11 @@
       }
     ],
     "params": [],
+    "body": {
+      "type": "json",
+      "raw": " {\n            \n            \"name\":\"Testerville\",\n            \"job_post_link\":\"www.google.com\",\n            \"resume\": 2,\n            \"cover_letter\": 2,\n            \"applied\": \"2023-12-30\",\n            \"due_date\":\"2023-12-30\",\n            \"companyjobs\": 2,\n            \"job_service\": 2,\n            \"role\": 2,\n            \"temperature\": 10,\n            \"contact\": 3,\n            \"description\": \"Job for folks with shit\"\n        }\n",
+      "form": []
+    },
     "tests": []
   }
 ]
