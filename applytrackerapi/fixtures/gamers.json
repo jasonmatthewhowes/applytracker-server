@@ -1,0 +1,10 @@
+[
+    {
+        "model": "applytrackerapi.gamer",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "bio": "Me"
+        }
+    }
+]

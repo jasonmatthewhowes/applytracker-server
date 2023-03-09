@@ -1,0 +1,44 @@
+[
+    {
+        "model": "applytrackerapi.role",
+        "pk": 1,
+        "fields": {
+            "name": "Quality Assurance"
+         
+        }
+    },
+    {
+        "model": "applytrackerapi.role",
+        "pk": 2,
+        "fields": {
+            "name": "Software Developer"
+         
+        }
+    },
+    {
+        "model": "applytrackerapi.role",
+        "pk": 3,
+        "fields": {
+            "name": "Jr Software Developer"
+         
+        }
+    },
+    {
+        "model": "applytrackerapi.role",
+        "pk": 4,
+        "fields": {
+            "name": "Project Manager"
+         
+        }
+    },
+    {
+        "model": "applytrackerapi.role",
+        "pk": 5,
+        "fields": {
+            "name": "Director of Operations"
+         
+        }
+    }
+    
+    
+]

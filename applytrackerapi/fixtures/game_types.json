@@ -1,0 +1,23 @@
+[
+    {
+        "model": "applytrackerapi.GameType",
+        "pk": 1,
+        "fields": {
+            "name": "Board game"
+        }
+    },
+    {
+        "model": "applytrackerapi.GameType",
+        "pk": 2,
+        "fields": {
+            "name": "Role-playing game"
+        }
+    },
+    {
+        "model": "applytrackerapi.GameType",
+        "pk": 3,
+        "fields": {
+            "name": "MMO game"
+        }
+    }
+]

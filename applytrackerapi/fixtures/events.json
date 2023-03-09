@@ -1,0 +1,37 @@
+[
+    {
+        "model": "applytrackerapi.event",
+        "pk": 1,
+        "fields": {
+            "gamer": 1,
+            "game": 3,
+            "name":"Southeastern Toilet Summit",
+            "description":"We are gonna have a wild time with diet mountain dew and hotpockets",
+            "date": "2023-06-29T13:24:27.172Z"
+        }
+    },
+    {
+        "model": "applytrackerapi.event",
+        "pk": 2,
+        "fields": {
+            "gamer": 1,
+            "game": 2,
+            "name":"Come to the Florida Pan Handle to get on the raft of your life",
+            "description":"Most come down to FL for spring break antics, but this event is for flashing your hard drive because it is gonna be wild",
+            "date": "2023-02-20T13:24:27.172Z"
+        }
+    },
+    {
+        "model": "applytrackerapi.event",
+        "pk": 3,
+        "fields": {
+            "gamer": 1,
+            "game": 1,
+            "name":"Ass Fest",
+            "description":"Bring your sharpest wits because we stabbing all dat ass",
+            "date": "2023-01-18T13:24:27.172Z"
+        }
+    }
+    
+    
+]

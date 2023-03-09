@@ -1,0 +1,43 @@
+[
+    {
+        "model": "applytrackerapi.job_service",
+        "pk": 1,
+        "fields": {
+            "name": "LinkedIn"
+         
+        }
+    },
+    {
+        "model": "applytrackerapi.job_service",
+        "pk": 2,
+        "fields": {
+            "name": "Indeed"
+         
+        }
+    },
+    {
+        "model": "applytrackerapi.job_service",
+        "pk": 3,
+        "fields": {
+            "name": "Monster"
+         
+        }
+    },
+    {
+        "model": "applytrackerapi.job_service",
+        "pk": 4,
+        "fields": {
+            "name": "ZipRecruiter"
+         
+        }
+    },
+    {
+        "model": "applytrackerapi.job_service",
+        "pk": 5,
+        "fields": {
+            "name": "Jooble"
+         
+        }
+    }
+    
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "model": "applytrackerapi.reminder",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "job": 5,
+            "followup_date": "09/01/2023"
+            
+        }
+    }
+    
+]
