@@ -25,6 +25,7 @@ from applytrackerapi.views import EventView
 from applytrackerapi.views import GameView
 from applytrackerapi.views import JobView
 from applytrackerapi.views import ResumeView
+from applytrackerapi.views import Cover_LetterView
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'gametypes', GameTypeView, 'gametype')
@@ -32,6 +33,7 @@ router.register(r'events', EventView, 'event')
 router.register(r'games', GameView, 'game')
 router.register(r'jobs', JobView, 'job')
 router.register(r'resumes', ResumeView, 'resume')
+router.register(r'cover_letters', Cover_LetterView, 'cover_letter')
 
 
 urlpatterns = [

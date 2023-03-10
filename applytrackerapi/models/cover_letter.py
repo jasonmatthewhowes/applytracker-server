@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 
 class Cover_Letter(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     cover_letter_url = models.URLField(null=True, max_length=300)
     name = models.CharField(null=False, max_length=155)
     finalized = models.BooleanField(null=True)

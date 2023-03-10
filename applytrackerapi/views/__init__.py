@@ -4,4 +4,5 @@ from .event import EventView
 from .game import GameView
 from .job import JobView
 from .resume import ResumeView
+from .cover_letter import Cover_LetterView
 from django.contrib.auth.models import User
