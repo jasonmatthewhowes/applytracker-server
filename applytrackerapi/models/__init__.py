@@ -12,3 +12,4 @@ from .company import Company
 from .interview import Interview
 from .role import Role
 from .contact import Contact
+from django.contrib.auth.models import User

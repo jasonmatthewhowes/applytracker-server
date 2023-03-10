@@ -7,3 +7,5 @@ class Resume(models.Model):
     resume_name = models.CharField(null=False, max_length=155)
     date_reviewed = models.DateField(null=True)
     body = models.TextField(null=True)
+    role = models.ForeignKey("Role", on_delete=models.CASCADE, null=True)
+

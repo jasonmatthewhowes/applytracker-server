@@ -22,32 +22,26 @@ class JobView(ViewSet):
         """Handle GET requests for single
         
         Returns:
-            Response -- JSON serialized game type
+            Response -- JSON serialized job if job does not belong to user, unauthorized
         """
 
         job = Job.objects.get(pk=pk)
-        serializer = JobSerializer(job)
-    
-        return Response(serializer.data)
-
+        filteredby = request.auth.user_id
+        if job.user_id == filteredby:
+            serializer = JobSerializer(job)
+            return Response(serializer.data)
+        else: 
+            return Response(None, status=status.HTTP_401_UNAUTHORIZED)
 
     def list(self, request):
         """Handle GET requests to get all game types
 
         Returns:
-            Response -- JSON serialized list of game types
+            Response -- JSON serialized list of game types filtered by user
         """
         jobs = Job.objects.all()
-
-        # if "game" in request.query_params:
-        #     filteredby = request.query_params['game'][0]
-        #     jobs = jobs.filter(game=filteredby)
-
-        # # Set the `joined` property on every job
-        # for job in jobs:
-        # # Check to see if the gamer is in the attendees list on the job
-        #     job.joined = job.gamer in job.attendees.all()
-
+        filteredby = request.auth.user_id
+        jobs = jobs.filter(user = filteredby)
         serializer = JobSerializer(jobs, many=True)
         return Response(serializer.data)
 
@@ -112,8 +106,13 @@ class JobView(ViewSet):
 
     def destroy(self, request, pk):
         job = Job.objects.get(pk=pk)
-        job.delete()
-        return Response(None, status=status.HTTP_204_NO_CONTENT)
+        permission = request.auth.user_id
+        if job.user_id == permission:
+            job.delete()
+            return Response(None, status=status.HTTP_204_NO_CONTENT)
+        else: 
+            return Response(None, status=status.HTTP_401_UNAUTHORIZED)
+
 
     
     # @action(methods=['post'], detail=True)
