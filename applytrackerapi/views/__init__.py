@@ -7,4 +7,5 @@ from .resume import ResumeView
 from .cover_letter import Cover_LetterView
 from .company import CompanyView
 from .contact import ContactView
+from .role import RoleView
 from django.contrib.auth.models import User

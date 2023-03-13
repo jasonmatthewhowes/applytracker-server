@@ -28,6 +28,7 @@ from applytrackerapi.views import ResumeView
 from applytrackerapi.views import Cover_LetterView
 from applytrackerapi.views import CompanyView
 from applytrackerapi.views import ContactView
+from applytrackerapi.views import RoleView
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'gametypes', GameTypeView, 'gametype')
@@ -38,6 +39,7 @@ router.register(r'resumes', ResumeView, 'resume')
 router.register(r'cover_letters', Cover_LetterView, 'cover_letter')
 router.register(r'companies', CompanyView, 'company')
 router.register(r'contacts', ContactView, 'contact')
+router.register(r'roles', RoleView, 'role')
 
 
 urlpatterns = [
