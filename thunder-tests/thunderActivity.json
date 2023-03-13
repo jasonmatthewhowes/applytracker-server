@@ -868,21 +868,21 @@
     "colId": "history",
     "containerId": "",
     "name": "http://localhost:8000/events/3/leave",
-    "url": "http://localhost:8000/jobs",
+    "url": "http://localhost:8000/contacts",
     "method": "GET",
     "sortNum": 0,
     "created": "2023-02-17T21:51:09.273Z",
-    "modified": "2023-03-10T21:12:54.725Z",
+    "modified": "2023-03-13T18:30:19.429Z",
     "headers": [
       {
         "name": "Authorization",
-        "value": "Token fa2eba9be8282d595c997ee5cd49f2ed31f65bed"
+        "value": "Token fa2eba9be8282d595c997ee5cd49f2ed31f65ted"
       }
     ],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n            \"user\": 1,\n            \"cover_letter_url\":\"www.dogs.com\",\n            \"name\":\"Create for Carrie\",\n            \"finalized\": true,\n            \"job\": 5,\n            \"body\": \"Big ole fat cover letter\"\n            \n        }",
+      "raw": "{\n    \n    \"first_name\": \"Jen\",\n    \"last_name\":\"Trail\",\n    \"email\": \"jen.trail@gmail.com\",\n    \"linkedin_url\": \"www.linkedin.com/jentrail\",\n    \"title\": \"Director of Health\",\n    \"phone\": \"615-775-8110\",\n    \"company\": 3\n  }",
       "form": []
     },
     "tests": []

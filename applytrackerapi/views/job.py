@@ -137,15 +137,15 @@ class JobView(ViewSet):
 class JobResumeSerializer(serializers.ModelSerializer):
     class Meta:
         model = Resume
-        fields = ('resume_name', 'resume_url')
+        fields = ('id','resume_name', 'resume_url')
 class JobCoverLetterSerializer(serializers.ModelSerializer):
     class Meta:
         model = Cover_Letter
-        fields = ('name', 'cover_letter_url','finalized')
+        fields = ('id','name', 'cover_letter_url','finalized')
 class JobContactSerializer(serializers.ModelSerializer):
     class Meta:
         model = Contact
-        fields = ('full_name', 'email')
+        fields = ('id', 'full_name', 'email')
 class JobCompanySerializer(serializers.ModelSerializer):
     class Meta:
         model = Company

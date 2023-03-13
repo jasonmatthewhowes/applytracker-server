@@ -1,7 +1,8 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 class Contact(models.Model):
-    
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     first_name = models.CharField(null=False, max_length=155)
     last_name = models.CharField(null=False, max_length=155)
     email = models.CharField(null=True, max_length=155)
