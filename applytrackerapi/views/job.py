@@ -146,12 +146,27 @@ class JobContactSerializer(serializers.ModelSerializer):
     class Meta:
         model = Contact
         fields = ('full_name', 'email')
+class JobCompanySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Company
+        fields = ('id', 'name')
+class JobRoleSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Role
+        fields = ('id', 'name')
+class JobServiceSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Job_Service
+        fields = ('id', 'name')
  
 
 class JobSerializer(serializers.ModelSerializer):
     resume = JobResumeSerializer(many = False )
     cover_letter = JobCoverLetterSerializer(many = False )
     contact = JobContactSerializer(many = False )
+    companyjobs = JobCompanySerializer(many = False )
+    role = JobRoleSerializer(many = False )
+    job_service = JobServiceSerializer(many = False )
     class Meta:
         model = Job
         fields = ('id', 'user', 'name', 'job_post_link', 'resume', 'cover_letter', 'applied', 'due_date', 'description', 'job_service','role', 'timestamp', 'companyjobs', 'contact', 'temperature')
