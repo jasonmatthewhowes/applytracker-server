@@ -8,4 +8,5 @@ from .cover_letter import Cover_LetterView
 from .company import CompanyView
 from .contact import ContactView
 from .role import RoleView
+from .job_service import Job_ServiceView
 from django.contrib.auth.models import User

@@ -14,6 +14,7 @@
             "job_service": 2,
             "role": 2,
             "contact": 3,
+            "description": "This is a job I want",
             "temperature": 5
         }
     },
@@ -31,6 +32,8 @@
             "companyjobs": 2,
             "job_service": 3,
             "role": 3,
+            "contact":2,
+            "description": "This is a job where you do stuff",
             "temperature": 7
         }
     },
@@ -42,12 +45,14 @@
             "name":"Project Manager",
             "job_post_link":"https://www.usnews.com/dims4/USNEWS/af66e3c/2147483647/crop/2000x1313%2B0%2B0/resize/640x420/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2Ff9%2Ff1%2Fa6174c87479b8222c09903d7651c%2F190219-softwaredevelopers-stock.jpg",
             "resume": 3,
-            "cover_letter": null,
+            "cover_letter": 3,
             "applied": "2023-03-02",
             "due_date":"2023-10-15",
             "companyjobs": 2,
             "job_service": 3,
             "role": 4,
+            "contact":4,
+            "description": "This is a job where you do other stuff",
             "temperature": null
         }
     },
@@ -59,12 +64,14 @@
             "name":"Operations Director",
             "job_post_link":"https://d341ezm4iqaae0.cloudfront.net/assets/2019/05/21234607/Director_operations-02.png",
             "resume": 4,
-            "cover_letter": null,
+            "cover_letter": 5,
             "applied": null,
             "due_date":"2023-09-25",
             "companyjobs": 2,
             "job_service": 4,
             "role": 2,
+            "contact":2,
+            "description": "Teach people how to mayo a sammy",
             "temperature": 2
         }
     },
@@ -83,6 +90,7 @@
             "job_service": 1,
             "role": 1,
             "contact": 1,
+            "description":"If you teach a man to fish he can fish",
             "temperature": 9
         }
     }

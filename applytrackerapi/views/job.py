@@ -66,6 +66,7 @@ class JobView(ViewSet):
             applied = request.data ["applied"],
             description = request.data["description"],
             due_date = request.data["due_date"],
+            temperature = request.data["temperature"],
             user = user,
             resume = resume,
             cover_letter = cover_letter,
@@ -85,6 +86,7 @@ class JobView(ViewSet):
         job.applied = request.data ["applied"]
         job.description = request.data["description"]
         job.due_date = request.data["due_date"]
+        job.temperature = request.data["temperature"]
         #get the objects to pass because of foreign key
         user = User.objects.get(pk=request.auth.user_id)
         resume = Resume.objects.get(pk=request.data["resume"])
