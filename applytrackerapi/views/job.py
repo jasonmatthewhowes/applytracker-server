@@ -57,7 +57,7 @@ class JobView(ViewSet):
         cover_letter = Cover_Letter.objects.get(pk=request.data["cover_letter"])
         job_service = Job_Service.objects.get(pk=request.data["job_service"])
         role = Role.objects.get(pk=request.data["role"])
-        companyjobs = Company.objects.get(pk=request.data["companyjobs"])
+        company = Company.objects.get(pk=request.data["company"])
         contact = Contact.objects.get(pk=request.data["contact"])
 
         job = Job.objects.create(
@@ -72,7 +72,7 @@ class JobView(ViewSet):
             cover_letter = cover_letter,
             job_service = job_service,
             role = role,
-            companyjobs = companyjobs,
+            company = company,
             contact = contact,
         )
         serializer = JobSerializer(job)
@@ -93,14 +93,14 @@ class JobView(ViewSet):
         cover_letter = Cover_Letter.objects.get(pk=request.data["cover_letter"])
         job_service = Job_Service.objects.get(pk=request.data["job_service"])
         role = Role.objects.get(pk=request.data["role"])
-        companyjobs = Company.objects.get(pk=request.data["companyjobs"])
+        company = Company.objects.get(pk=request.data["company"])
         contact = Contact.objects.get(pk=request.data["contact"])
         job.user = user
         job.resume = resume
         job.cover_letter = cover_letter
         job.job_service = job_service
         job.role = role
-        job.companyjobs = companyjobs
+        job.company = company
         job.contact = contact
         job.save()
 
@@ -115,6 +115,7 @@ class JobView(ViewSet):
         else: 
             return Response(None, status=status.HTTP_401_UNAUTHORIZED)
 
+    
 
     
     # @action(methods=['post'], detail=True)
@@ -166,9 +167,9 @@ class JobSerializer(serializers.ModelSerializer):
     resume = JobResumeSerializer(many = False )
     cover_letter = JobCoverLetterSerializer(many = False )
     contact = JobContactSerializer(many = False )
-    companyjobs = JobCompanySerializer(many = False )
+    company = JobCompanySerializer(many = False )
     role = JobRoleSerializer(many = False )
     job_service = JobServiceSerializer(many = False )
     class Meta:
         model = Job
-        fields = ('id', 'user', 'name', 'job_post_link', 'resume', 'cover_letter', 'applied', 'due_date', 'description', 'job_service','role', 'timestamp', 'companyjobs', 'contact', 'temperature')
+        fields = ('id', 'user', 'name', 'job_post_link', 'resume', 'cover_letter', 'applied', 'due_date', 'description', 'job_service','role', 'timestamp', 'company', 'contact', 'temperature')

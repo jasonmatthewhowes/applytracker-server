@@ -4,7 +4,6 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
 from applytrackerapi.models import Company
-from applytrackerapi.models import Job
 from django.contrib.auth.models import User
 
 from rest_framework.decorators import action
@@ -48,13 +47,10 @@ class CompanyView(ViewSet):
         Response -- JSON serialized company instance
     """
         user = User.objects.get(pk=request.auth.user_id)
-        job = None
-        if 'job' in request.data:
-            job = Job.objects.get(pk=request.data["job"])
         company = Company.objects.create(
             user = user,
             name = request.data["name"],
-            job = job
+            
             
         )
         serializer = CompanySerializer(company)
@@ -66,13 +62,10 @@ class CompanyView(ViewSet):
         name = request.data ["name"]
         
         #get the objects to pass because of foreign key
-        job = None
-        if 'job' in request.data:
-            job = Job.objects.get(pk=request.data["job"])
+
         user = User.objects.get(pk=request.auth.user_id)
         company.user = user
         company.name = name
-        company.job= job
         company.save()
 
         return Response(None, status=status.HTTP_204_NO_CONTENT)
@@ -91,4 +84,4 @@ class CompanySerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Company
-        fields = ('id', 'name', 'job')
+        fields = ('id', 'name')
