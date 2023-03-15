@@ -48,7 +48,9 @@ class CompanyView(ViewSet):
         Response -- JSON serialized company instance
     """
         user = User.objects.get(pk=request.auth.user_id)
-        job = Job.objects.get(pk=request.data["job"])
+        job = None
+        if 'job' in request.data:
+            job = Job.objects.get(pk=request.data["job"])
         company = Company.objects.create(
             user = user,
             name = request.data["name"],
@@ -64,8 +66,9 @@ class CompanyView(ViewSet):
         name = request.data ["name"]
         
         #get the objects to pass because of foreign key
-    
-        job = Job.objects.get(pk=request.data["job"])
+        job = None
+        if 'job' in request.data:
+            job = Job.objects.get(pk=request.data["job"])
         user = User.objects.get(pk=request.auth.user_id)
         company.user = user
         company.name = name
