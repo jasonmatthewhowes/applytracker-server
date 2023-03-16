@@ -107,6 +107,9 @@ class InterviewView(ViewSet):
         interview.interviewcontacts.remove(contact)
         return Response({'message': 'Contact Removed'}, status=status.HTTP_204_NO_CONTENT)
     
+   
+
+
 class InterviewUserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
@@ -115,11 +118,16 @@ class InterviewJobSerializer(serializers.ModelSerializer):
     class Meta:
         model = Job
         fields = ('id','name')
+class InterviewContactsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Contact
+        fields = ('id','full_name')
  
 
 class InterviewSerializer(serializers.ModelSerializer):
     user = InterviewUserSerializer(many = False )
     job = InterviewJobSerializer(many = False )
+    interviewcontacts = InterviewContactsSerializer(many = True )
 
     class Meta:
         model = Interview

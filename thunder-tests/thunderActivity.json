@@ -868,11 +868,11 @@
     "colId": "history",
     "containerId": "",
     "name": "http://localhost:8000/events/3/leave",
-    "url": "http://localhost:8000/interviews/2/connect",
-    "method": "POST",
+    "url": "http://localhost:8000/events",
+    "method": "GET",
     "sortNum": 0,
     "created": "2023-02-17T21:51:09.273Z",
-    "modified": "2023-03-16T17:05:17.901Z",
+    "modified": "2023-03-16T18:01:17.916Z",
     "headers": [
       {
         "name": "Authorization",
@@ -882,7 +882,7 @@
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n    \"contact\": 4\n    \n  }",
+      "raw": "{\n    \"contact\": 3\n    \n  }",
       "form": []
     },
     "tests": []
