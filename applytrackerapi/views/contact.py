@@ -97,10 +97,13 @@ class ContactView(ViewSet):
             return Response(None, status=status.HTTP_204_NO_CONTENT)
         else: 
             return Response(None, status=status.HTTP_401_UNAUTHORIZED)
-
+class CompanyContactsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Company
+        fields = ('id','name')
     
 class ContactSerializer(serializers.ModelSerializer):
-
+    company = CompanyContactsSerializer(many = False)
     class Meta:
         model = Contact
-        fields = ('id', 'full_name', 'email', 'linkedin_url', 'title', 'phone', 'company')
+        fields = ('id', 'full_name','first_name', 'last_name', 'email', 'linkedin_url', 'title', 'phone', 'company')
