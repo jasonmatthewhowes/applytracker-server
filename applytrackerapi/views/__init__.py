@@ -9,4 +9,5 @@ from .company import CompanyView
 from .contact import ContactView
 from .role import RoleView
 from .job_service import Job_ServiceView
+from .interview import InterviewView
 from django.contrib.auth.models import User

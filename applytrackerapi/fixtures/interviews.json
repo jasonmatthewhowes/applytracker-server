@@ -1,0 +1,51 @@
+[
+    {
+        "model": "applytrackerapi.interview",
+        "pk": 1,
+        "fields": {
+            "user": 2,
+            "date": "2023-03-29",
+            "time": "14:30:00",
+            "location": "2705 12th Avenue South",
+            "job": 2
+            
+        }
+    },
+    {
+        "model": "applytrackerapi.interview",
+        "pk": 2,
+        "fields": {
+            "user": 2,
+            "date": "2023-04-30",
+            "time": "10:00:00",
+            "location": "2705 12th Avenue South",
+            "job": 3
+            
+        }
+    },
+    {
+        "model": "applytrackerapi.interview",
+        "pk": 3,
+        "fields": {
+            "user": 2,
+            "date": "2023-05-30",
+            "time": "08:30:00",
+            "location": "2705 12th Avenue South",
+            "job": 6
+            
+        }
+    },
+    {
+        "model": "applytrackerapi.interview",
+        "pk": 4,
+        "fields": {
+            "user": 1,
+            "date": "2023-06-15",
+            "time": "15:30:00",
+            "location": "2705 12th Avenue South",
+            "job": 5
+            
+        }
+    }
+
+]

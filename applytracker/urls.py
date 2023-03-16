@@ -30,6 +30,7 @@ from applytrackerapi.views import CompanyView
 from applytrackerapi.views import ContactView
 from applytrackerapi.views import RoleView
 from applytrackerapi.views import Job_ServiceView
+from applytrackerapi.views import InterviewView
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'gametypes', GameTypeView, 'gametype')
@@ -41,6 +42,7 @@ router.register(r'cover_letters', Cover_LetterView, 'cover_letter')
 router.register(r'companies', CompanyView, 'company')
 router.register(r'contacts', ContactView, 'contact')
 router.register(r'roles', RoleView, 'role')
+router.register(r'interviews', InterviewView, 'interview')
 router.register(r'job_services', Job_ServiceView, 'job_service')
 
 
