@@ -19,12 +19,12 @@ class CompanyView(ViewSet):
         """
 
         company = Company.objects.get(pk=pk)
-        filteredby = request.auth.user_id
-        if company.user_id == filteredby:
-            serializer = CompanySerializer(company)
-            return Response(serializer.data)
-        else: 
-            return Response(None, status=status.HTTP_401_UNAUTHORIZED)
+        # filteredby = request.auth.user_id
+        # if company.user_id == filteredby:
+        serializer = CompanySerializer(company)
+        return Response(serializer.data)
+        # else: 
+        #     return Response(None, status=status.HTTP_401_UNAUTHORIZED)
 
 
 
@@ -35,8 +35,8 @@ class CompanyView(ViewSet):
             Response -- JSON serialized list of game types
         """
         companies = Company.objects.all()
-        filteredby = request.auth.user_id
-        companies = companies.filter(user = filteredby)
+        # filteredby = request.auth.user_id
+        # companies = companies.filter(user = filteredby)
         serializer = CompanySerializer(companies, many=True)
         return Response(serializer.data)
 

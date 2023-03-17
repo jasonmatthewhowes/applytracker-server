@@ -20,12 +20,12 @@ class Job_ServiceView(ViewSet):
         """
 
         job_service = Job_Service.objects.get(pk=pk)
-        filteredby = request.auth.user_id
-        if job_service.user_id == filteredby:
-            serializer = Job_ServiceSerializer(job_service)
-            return Response(serializer.data)
-        else: 
-            return Response(None, status=status.HTTP_401_UNAUTHORIZED)
+        # filteredby = request.auth.user_id
+        # if job_service.user_id == filteredby:
+        serializer = Job_ServiceSerializer(job_service)
+        return Response(serializer.data)
+        # else: 
+        #     return Response(None, status=status.HTTP_401_UNAUTHORIZED)
 
 
 
@@ -36,8 +36,8 @@ class Job_ServiceView(ViewSet):
             Response -- JSON serialized list of game types
         """
         job_services = Job_Service.objects.all()
-        filteredby = request.auth.user_id
-        job_services = job_services.filter(user = filteredby)
+        # filteredby = request.auth.user_id
+        # job_services = job_services.filter(user = filteredby)
         serializer = Job_ServiceSerializer(job_services, many=True)
         return Response(serializer.data)
 

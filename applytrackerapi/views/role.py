@@ -20,12 +20,12 @@ class RoleView(ViewSet):
         """
 
         role = Role.objects.get(pk=pk)
-        filteredby = request.auth.user_id
-        if role.user_id == filteredby:
-            serializer = RoleSerializer(role)
-            return Response(serializer.data)
-        else: 
-            return Response(None, status=status.HTTP_401_UNAUTHORIZED)
+        # filteredby = request.auth.user_id
+        # if role.user_id == filteredby:
+        serializer = RoleSerializer(role)
+        return Response(serializer.data)
+        # else: 
+        #     return Response(None, status=status.HTTP_401_UNAUTHORIZED)
 
 
 
@@ -36,8 +36,8 @@ class RoleView(ViewSet):
             Response -- JSON serialized list of game types
         """
         roles = Role.objects.all()
-        filteredby = request.auth.user_id
-        roles = roles.filter(user = filteredby)
+        # filteredby = request.auth.user_id
+        # roles = roles.filter(user = filteredby)
         serializer = RoleSerializer(roles, many=True)
         return Response(serializer.data)
 

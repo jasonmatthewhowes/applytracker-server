@@ -48,13 +48,13 @@ class Cover_LetterView(ViewSet):
         Response -- JSON serialized cover_letter instance
     """
         user = User.objects.get(pk=request.auth.user_id)
-        job = Job.objects.get(pk=request.data["job"])
+        # job = Job.objects.get(pk=request.data["job"])
         cover_letter = Cover_Letter.objects.create(
             user = user,
             cover_letter_url = request.data ["cover_letter_url"],
             name = request.data["name"],
             finalized = request.data["finalized"],
-            job = job,
+            # job = job,
             body = request.data["body"]
         )
         serializer = Cover_LetterSerializer(cover_letter)
