@@ -33,7 +33,7 @@ class RoleView(ViewSet):
         """Handle GET requests
 
         Returns:
-            Response -- JSON serialized list of game types
+            Response -- JSON serialized list
         """
         roles = Role.objects.all()
         # filteredby = request.auth.user_id

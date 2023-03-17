@@ -11,13 +11,13 @@ from django.contrib.auth.models import User
 from rest_framework.decorators import action
 
 class InterviewView(ViewSet):
-    """Level up view"""
+    
 
     def retrieve(self, request, pk):
         """Handle GET requests for single
         
         Returns:
-            Response -- JSON serialized game type
+            Response -- JSON serialized 
         """
 
         interview = Interview.objects.get(pk=pk)
@@ -34,7 +34,7 @@ class InterviewView(ViewSet):
         """Handle GET requests
 
         Returns:
-            Response -- JSON serialized list of game types
+            Response -- JSON serialized list 
         """
         interviews = Interview.objects.all()
         filteredby = request.auth.user_id
@@ -90,7 +90,7 @@ class InterviewView(ViewSet):
 
     @action(methods=['post'], detail=True)
     def connect(self, request, pk):
-        """Post request for a user to connect to an interview"""
+        """Post request for a user to connect a contact to an interview"""
     
         contact = Contact.objects.get(pk=request.data["contact"])
         interview = Interview.objects.get(pk=pk)
@@ -100,7 +100,7 @@ class InterviewView(ViewSet):
     
     @action(methods=['delete'], detail=True)
     def disconnect(self, request, pk):
-        """Post request for a user to sign up for an event"""
+        """Post request for a user to disconnect a contact from an interview"""
     
         contact = Contact.objects.get(pk=request.data["contact"])
         interview = Interview.objects.get(pk=pk)

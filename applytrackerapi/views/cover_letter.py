@@ -10,7 +10,7 @@ from django.contrib.auth.models import User
 from rest_framework.decorators import action
 
 class Cover_LetterView(ViewSet):
-    """Level up view"""
+    """ApplyTracker View"""
 
     def retrieve(self, request, pk):
         """Handle GET requests for single
@@ -90,26 +90,7 @@ class Cover_LetterView(ViewSet):
         else: 
             return Response(None, status=status.HTTP_401_UNAUTHORIZED)
 
-    
-    # @action(methods=['post'], detail=True)
-    # def signup(self, request, pk):
-    #     """Post request for a user to sign up for an cover_letter"""
-    
-    #     gamer = Gamer.objects.get(user=request.auth.user)
-    #     cover_letter = Cover_Letter.objects.get(pk=pk)
-    #     cover_letter.attendees.add(gamer)
-    #     return Response({'message': 'Gamer added'}, status=status.HTTP_201_CREATED)
-    
-    
-    # @action(methods=['delete'], detail=True)
-    # def leave(self, request, pk):
-    #     """Post request for a user to sign up for an cover_letter"""
-    
-    #     gamer = Gamer.objects.get(user=request.auth.user)
-    #     cover_letter = Cover_Letter.objects.get(pk=pk)
-    #     cover_letter.attendees.remove(gamer)
-    #     return Response({'message': 'Gamer deleted'}, status=status.HTTP_204_NO_CONTENT)
-    
+
 
 class Cover_LetterUserSerializer(serializers.ModelSerializer):
     class Meta:

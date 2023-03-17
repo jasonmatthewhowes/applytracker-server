@@ -33,7 +33,7 @@ class Job_ServiceView(ViewSet):
         """Handle GET requests
 
         Returns:
-            Response -- JSON serialized list of game types
+            Response -- JSON serialized list 
         """
         job_services = Job_Service.objects.all()
         # filteredby = request.auth.user_id
@@ -80,24 +80,7 @@ class Job_ServiceView(ViewSet):
             return Response(None, status=status.HTTP_401_UNAUTHORIZED)
 
     
-    # @action(methods=['post'], detail=True)
-    # def signup(self, request, pk):
-    #     """Post request for a user to sign up for an job_service"""
     
-    #     gamer = Gamer.objects.get(user=request.auth.user)
-    #     job_service = Job_Service.objects.get(pk=pk)
-    #     job_service.attendees.add(gamer)
-    #     return Response({'message': 'Gamer added'}, status=status.HTTP_201_CREATED)
-    
-    
-    # @action(methods=['delete'], detail=True)
-    # def leave(self, request, pk):
-    #     """Post request for a user to sign up for an job_service"""
-    
-    #     gamer = Gamer.objects.get(user=request.auth.user)
-    #     job_service = Job_Service.objects.get(pk=pk)
-    #     job_service.attendees.remove(gamer)
-    #     return Response({'message': 'Gamer deleted'}, status=status.HTTP_204_NO_CONTENT)
     
 
 class Job_ServiceUserSerializer(serializers.ModelSerializer):

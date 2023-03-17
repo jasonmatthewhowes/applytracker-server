@@ -16,7 +16,7 @@ from django.contrib.auth.models import User
 from rest_framework.decorators import action
 
 class JobView(ViewSet):
-    """Level up view"""
+   
 
     def retrieve(self, request, pk):
         """Handle GET requests for single
@@ -34,10 +34,10 @@ class JobView(ViewSet):
             return Response(None, status=status.HTTP_401_UNAUTHORIZED)
 
     def list(self, request):
-        """Handle GET requests to get all game types
+        """Handle GET requests 
 
         Returns:
-            Response -- JSON serialized list of game types filtered by user
+            Response -- JSON serialized list 
         """
         jobs = Job.objects.all()
         filteredby = request.auth.user_id
@@ -117,25 +117,7 @@ class JobView(ViewSet):
 
     
 
-    
-    # @action(methods=['post'], detail=True)
-    # def signup(self, request, pk):
-    #     """Post request for a user to sign up for an job"""
-    
-    #     gamer = Gamer.objects.get(user=request.auth.user)
-    #     job = Job.objects.get(pk=pk)
-    #     job.attendees.add(gamer)
-    #     return Response({'message': 'Gamer added'}, status=status.HTTP_201_CREATED)
-    
-    
-    # @action(methods=['delete'], detail=True)
-    # def leave(self, request, pk):
-    #     """Post request for a user to sign up for an job"""
-    
-    #     gamer = Gamer.objects.get(user=request.auth.user)
-    #     job = Job.objects.get(pk=pk)
-    #     job.attendees.remove(gamer)
-    #     return Response({'message': 'Gamer deleted'}, status=status.HTTP_204_NO_CONTENT)
+   
     
 class JobResumeSerializer(serializers.ModelSerializer):
     class Meta:

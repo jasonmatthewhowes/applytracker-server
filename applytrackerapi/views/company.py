@@ -32,7 +32,7 @@ class CompanyView(ViewSet):
         """Handle GET requests
 
         Returns:
-            Response -- JSON serialized list of game types
+            Response -- JSON serialized list
         """
         companies = Company.objects.all()
         # filteredby = request.auth.user_id

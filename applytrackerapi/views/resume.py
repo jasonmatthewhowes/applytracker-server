@@ -10,7 +10,7 @@ from django.contrib.auth.models import User
 from rest_framework.decorators import action
 
 class ResumeView(ViewSet):
-    """Level up view"""
+
 
     def retrieve(self, request, pk):
         """Handle GET requests for single
@@ -33,7 +33,7 @@ class ResumeView(ViewSet):
         """Handle GET requests
 
         Returns:
-            Response -- JSON serialized list of game types
+            Response -- JSON serialized list
         """
         resumes = Resume.objects.all()
         filteredby = request.auth.user_id
@@ -90,26 +90,7 @@ class ResumeView(ViewSet):
         else: 
             return Response(None, status=status.HTTP_401_UNAUTHORIZED)
 
-    
-    # @action(methods=['post'], detail=True)
-    # def signup(self, request, pk):
-    #     """Post request for a user to sign up for an resume"""
-    
-    #     gamer = Gamer.objects.get(user=request.auth.user)
-    #     resume = Resume.objects.get(pk=pk)
-    #     resume.attendees.add(gamer)
-    #     return Response({'message': 'Gamer added'}, status=status.HTTP_201_CREATED)
-    
-    
-    # @action(methods=['delete'], detail=True)
-    # def leave(self, request, pk):
-    #     """Post request for a user to sign up for an resume"""
-    
-    #     gamer = Gamer.objects.get(user=request.auth.user)
-    #     resume = Resume.objects.get(pk=pk)
-    #     resume.attendees.remove(gamer)
-    #     return Response({'message': 'Gamer deleted'}, status=status.HTTP_204_NO_CONTENT)
-    
+
 
 class ResumeUserSerializer(serializers.ModelSerializer):
     class Meta:
